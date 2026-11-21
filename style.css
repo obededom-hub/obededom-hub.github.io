@@ -21,11 +21,51 @@ main{padding:28px 0 40px}
 .post-meta{color:var(--muted);font-size:.88rem;margin-bottom:18px}
 .hero{margin:0 0 20px;border-radius:12px;overflow:hidden}
 .hero img{width:100%;display:block}
-.post-body{font-size:1.02rem}
-.post-body h2{margin:1.6em 0 .5em;font-size:1.25rem}
-.post-body p{margin:0 0 1em}
-.post-body ul{padding-left:1.2em}
-.related-note{margin-top:26px;padding:14px;background:#f0f7f3;border-radius:10px}
+.post-body{font-size:1.02rem;color:#222}
+.post-body p{margin:0 0 1.05em;line-height:1.8}
+.post-body a{color:var(--brand)}
+/* 핵심 요약 */
+.tldr{background:linear-gradient(135deg,#f0f9f4,#e6f4ec);border:1px solid #cde9d8;border-left:5px solid var(--brand);border-radius:12px;padding:16px 18px;margin:0 0 24px}
+.tldr-title{margin:0 0 10px;font-size:1.02rem;font-weight:800;color:#0a5c3a}
+.tldr-list{margin:0;padding-left:1.25em}
+.tldr-list li{margin:0 0 7px;line-height:1.6;font-size:.98rem}
+.tldr-list li::marker{color:var(--brand)}
+/* 소제목 */
+.sec-title{margin:1.7em 0 .6em;font-size:1.28rem;font-weight:800;line-height:1.35;padding-bottom:8px;border-bottom:2px solid #eef1ef}
+.sub-title{margin:1.4em 0 .5em;font-size:1.1rem;font-weight:700}
+/* 목록 */
+.list-wrap{margin:0 0 1.1em}
+.post-body ul,.post-body ol{margin:0;padding-left:1.3em}
+.post-body li{margin:0 0 8px;line-height:1.7}
+.post-body li::marker{color:var(--brand);font-weight:700}
+/* 콜아웃 */
+.callout{border-radius:12px;padding:14px 16px;margin:0 0 1.2em;display:flex;gap:10px;align-items:flex-start;line-height:1.7}
+.callout p{margin:0}
+.callout--tip{background:#fff8e6;border:1px solid #f3e2a8;border-left:5px solid #e0a52a}
+.callout--tip .callout-ico{font-size:1.2rem;line-height:1.4}
+.callout-ico{flex:0 0 auto}
+/* 표 */
+.table-wrap{overflow-x:auto;margin:0 0 1.3em;border:1px solid var(--line);border-radius:10px}
+.post-body table{width:100%;border-collapse:collapse;font-size:.95rem;min-width:420px}
+.post-body th,.post-body td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.post-body thead th{background:#0a7d4f;color:#fff;font-weight:700;font-size:.92rem}
+.post-body tbody tr:nth-child(even){background:#f7faf8}
+.post-body tbody tr:last-child td{border-bottom:none}
+/* 인용 */
+.quote{border-left:4px solid #cdd5cf;margin:0 0 1.2em;padding:6px 16px;color:#444;background:#f6f8f7;border-radius:0 8px 8px 0;font-style:italic}
+/* 미드 이미지 */
+.mid-figure{margin:26px 0;border-radius:12px;overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.mid-figure img{width:100%;display:block}
+/* FAQ */
+.faq{margin-top:34px}
+.faq-item{border:1px solid var(--line);border-radius:10px;margin:0 0 10px;background:#fff;overflow:hidden}
+.faq-item summary{cursor:pointer;padding:14px 16px;font-weight:700;list-style:none;position:relative;padding-right:38px;line-height:1.5}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";position:absolute;right:16px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--brand);font-weight:400;transition:transform .2s}
+.faq-item[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq-item[open] summary{border-bottom:1px solid var(--line);background:#f7faf8}
+.faq-a{padding:13px 16px;color:#333;line-height:1.75}
+.related-note{margin-top:26px;padding:14px 16px;background:#f0f7f3;border-radius:10px}
 .site-footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.85rem}
 .site-footer .fine{font-size:.75rem;opacity:.8}
 .header-row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
