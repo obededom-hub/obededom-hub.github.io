@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+Sitemap: https://obededom-hub.github.io/sitemap.xml
