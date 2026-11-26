@@ -101,10 +101,8 @@ main{padding:28px 0 40px}
 .related-info li{margin:0 0 6px}
 .related-info a{color:#0a7d4f;font-weight:600;text-decoration:none}
 .related-info a:hover{text-decoration:underline}
-.ad-block{margin:22px auto;text-align:center;min-height:90px}
-.ad-label{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:1px;color:#999;margin-bottom:6px}
-.ad-slot{min-height:90px;background:repeating-linear-gradient(45deg,#f2f2f2,#f2f2f2 10px,#fafafa 10px,#fafafa 20px);border-radius:8px}
-.ad-container{margin:0}
-.ad-container--wide .ad-block{max-width:728px}
+/* 자동 광고(Auto Ads) — 광고 없으면 완전히 수축해 빈 공간 안 남김 */
+.adsbygoogle.ad-auto-anchor{display:block;min-height:0;margin:6px 0;max-width:100%}
+.adsbygoogle.ad-auto-anchor:not(:empty){min-height:90px;margin:18px 0}
 .about h2{font-size:1.3rem}
 .empty{color:var(--muted);text-align:center;padding:40px 0}
